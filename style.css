@@ -219,3 +219,10 @@ footer .sub-head ul, footer .last-head ul{
     }
 
 }
+
+@media (max-width: 375px) {
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+}
