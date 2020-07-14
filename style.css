@@ -106,6 +106,9 @@ nav button{
     color: white;
 
 }
+.grayish-blue hr{
+    display: none;
+}
 .grayish-blue h2{
     font-family:'Karla';
     color: hsl(256, 26%, 20%);
@@ -208,14 +211,101 @@ footer .sub-head ul, footer .last-head ul{
 }
 
 /*mobile section*/
-@media screen and (max-width:760px){
-    .container{
-   max-width: 100%;
-   padding:5px;
+@media screen and (max-width:375px){
+ 
+    body{
+        text-align:center;
+        flex-wrap: wrap;
     }
-    .Dark-violet .flex{ 
-        display:flex;
-        flex-direction: column-reverse;
+    nav ul {
+        display:none
+    }
+    .container{
+        margin: 0;
+        padding: 0;
+    width: 375px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    }
+    header .container{
+        padding:20px;
+    }
+    .flex{
+        flex-direction: column;
+        
+    }
+     .Dark-violet{
+    padding:0px;
+    margin: 0;   
+    height: 950px; 
     }
 
+    .Dark-violet>.container >.flex{
+        flex-direction: column-reverse;
+    }   
+    .Dark-violet>.container >.flex div img{
+        width: 100%;
+        height:auto;
+    }
+    .Dark-violet>.container >.flex div hr  {
+        display: none;
+    }
+    .Dark-violet>.container >.flex div h1{
+        padding: 50px 10px 15px;
+        font-size: 2.7em;
+        font-family: sans-serif; 
+        font-weight: normal;
+        
+    }
+    
+    .Dark-violet>.container >.flex div p{
+        padding: 10px 10px 20px;
+        font-size: 0.95em;
+        font-family: 'DM Serif Display'; 
+          
+        
+    } .grayish-blue{
+        padding:70px 5px 120px;
+    }
+    .grayish-blue hr{
+        display: block;
+        width:40%;
+        margin: auto;
+    }
+    .grayish-blue h2{
+        margin-top: 30px;
+        font-size: 2.8em;
+        font-weight: 900;
+        font-family: 'karla';
+    }
+    .grayish-blue .flex p{
+        text-align: center;
+        font-size: 14.6px;
+    }
+    .grayish-blue .gbflex{
+        flex-direction: column;
+        margin: 10px 5px;
+        height: 400px;    
+
+    }
+    .grayish-blue .gbflex div h4{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+    
+    .grayish-blue .gbflex div button{
+        background-color:hsl(256, 26%, 20%);
+        color: white;
+        border: 2px solid white;
+    }
+
+    footer .container .flex{
+        flex-direction: column;
+    }
+    footer ul{
+        padding:0; 
+        width:100px;
+    }
 }
