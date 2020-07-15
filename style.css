@@ -309,3 +309,13 @@ footer .sub-head ul, footer .last-head ul{
         width:100px;
     }
 }
+
+
+
+/* New stuff */
+@media(max-width: 768px){
+    .footer__links-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
